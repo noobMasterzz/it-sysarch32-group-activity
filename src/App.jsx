@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
+import { initializeApp } from "firebase/app";
+import {Auth} from "./components/auth";
 
+function App(){
+  return <div className="App"><Auth/>
+  
+  </div>
+}
 function LoginPage() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
